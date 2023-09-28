@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5830035A2ACC16B400C9A649 /* syracuse_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583003592ACC16B400C9A649 /* syracuse_appApp.swift */; };
+		5830035C2ACC16B400C9A649 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5830035B2ACC16B400C9A649 /* ContentView.swift */; };
+		5830035E2ACC16B500C9A649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5830035D2ACC16B500C9A649 /* Assets.xcassets */; };
+		583003612ACC16B500C9A649 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583003602ACC16B500C9A649 /* Preview Assets.xcassets */; };
+		5830036C2ACC16B500C9A649 /* syracuse_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5830036B2ACC16B500C9A649 /* syracuse_appTests.swift */; };
+		583003762ACC16B500C9A649 /* syracuse_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583003752ACC16B500C9A649 /* syracuse_appUITests.swift */; };
+		583003782ACC16B500C9A649 /* syracuse_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583003772ACC16B500C9A649 /* syracuse_appUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		583003682ACC16B500C9A649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5830034E2ACC16B400C9A649 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 583003552ACC16B400C9A649;
+			remoteInfo = syracuse_app;
+		};
+		583003722ACC16B500C9A649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5830034E2ACC16B400C9A649 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 583003552ACC16B400C9A649;
+			remoteInfo = syracuse_app;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		583003562ACC16B400C9A649 /* syracuse_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = syracuse_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		583003592ACC16B400C9A649 /* syracuse_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syracuse_appApp.swift; sourceTree = "<group>"; };
+		5830035B2ACC16B400C9A649 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5830035D2ACC16B500C9A649 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		583003602ACC16B500C9A649 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		583003622ACC16B500C9A649 /* syracuse_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = syracuse_app.entitlements; sourceTree = "<group>"; };
+		583003672ACC16B500C9A649 /* syracuse_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = syracuse_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5830036B2ACC16B500C9A649 /* syracuse_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syracuse_appTests.swift; sourceTree = "<group>"; };
+		583003712ACC16B500C9A649 /* syracuse_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = syracuse_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		583003752ACC16B500C9A649 /* syracuse_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syracuse_appUITests.swift; sourceTree = "<group>"; };
+		583003772ACC16B500C9A649 /* syracuse_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syracuse_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		583003532ACC16B400C9A649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583003642ACC16B500C9A649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830036E2ACC16B500C9A649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5830034D2ACC16B400C9A649 = {
+			isa = PBXGroup;
+			children = (
+				583003582ACC16B400C9A649 /* syracuse_app */,
+				5830036A2ACC16B500C9A649 /* syracuse_appTests */,
+				583003742ACC16B500C9A649 /* syracuse_appUITests */,
+				583003572ACC16B400C9A649 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		583003572ACC16B400C9A649 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				583003562ACC16B400C9A649 /* syracuse_app.app */,
+				583003672ACC16B500C9A649 /* syracuse_appTests.xctest */,
+				583003712ACC16B500C9A649 /* syracuse_appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		583003582ACC16B400C9A649 /* syracuse_app */ = {
+			isa = PBXGroup;
+			children = (
+				583003592ACC16B400C9A649 /* syracuse_appApp.swift */,
+				5830035B2ACC16B400C9A649 /* ContentView.swift */,
+				5830035D2ACC16B500C9A649 /* Assets.xcassets */,
+				583003622ACC16B500C9A649 /* syracuse_app.entitlements */,
+				5830035F2ACC16B500C9A649 /* Preview Content */,
+			);
+			path = syracuse_app;
+			sourceTree = "<group>";
+		};
+		5830035F2ACC16B500C9A649 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				583003602ACC16B500C9A649 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5830036A2ACC16B500C9A649 /* syracuse_appTests */ = {
+			isa = PBXGroup;
+			children = (
+				5830036B2ACC16B500C9A649 /* syracuse_appTests.swift */,
+			);
+			path = syracuse_appTests;
+			sourceTree = "<group>";
+		};
+		583003742ACC16B500C9A649 /* syracuse_appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				583003752ACC16B500C9A649 /* syracuse_appUITests.swift */,
+				583003772ACC16B500C9A649 /* syracuse_appUITestsLaunchTests.swift */,
+			);
+			path = syracuse_appUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		583003552ACC16B400C9A649 /* syracuse_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5830037B2ACC16B500C9A649 /* Build configuration list for PBXNativeTarget "syracuse_app" */;
+			buildPhases = (
+				583003522ACC16B400C9A649 /* Sources */,
+				583003532ACC16B400C9A649 /* Frameworks */,
+				583003542ACC16B400C9A649 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = syracuse_app;
+			productName = syracuse_app;
+			productReference = 583003562ACC16B400C9A649 /* syracuse_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		583003662ACC16B500C9A649 /* syracuse_appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5830037E2ACC16B500C9A649 /* Build configuration list for PBXNativeTarget "syracuse_appTests" */;
+			buildPhases = (
+				583003632ACC16B500C9A649 /* Sources */,
+				583003642ACC16B500C9A649 /* Frameworks */,
+				583003652ACC16B500C9A649 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				583003692ACC16B500C9A649 /* PBXTargetDependency */,
+			);
+			name = syracuse_appTests;
+			productName = syracuse_appTests;
+			productReference = 583003672ACC16B500C9A649 /* syracuse_appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		583003702ACC16B500C9A649 /* syracuse_appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 583003812ACC16B500C9A649 /* Build configuration list for PBXNativeTarget "syracuse_appUITests" */;
+			buildPhases = (
+				5830036D2ACC16B500C9A649 /* Sources */,
+				5830036E2ACC16B500C9A649 /* Frameworks */,
+				5830036F2ACC16B500C9A649 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				583003732ACC16B500C9A649 /* PBXTargetDependency */,
+			);
+			name = syracuse_appUITests;
+			productName = syracuse_appUITests;
+			productReference = 583003712ACC16B500C9A649 /* syracuse_appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5830034E2ACC16B400C9A649 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					583003552ACC16B400C9A649 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					583003662ACC16B500C9A649 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 583003552ACC16B400C9A649;
+					};
+					583003702ACC16B500C9A649 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 583003552ACC16B400C9A649;
+					};
+				};
+			};
+			buildConfigurationList = 583003512ACC16B400C9A649 /* Build configuration list for PBXProject "syracuse_app" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5830034D2ACC16B400C9A649;
+			productRefGroup = 583003572ACC16B400C9A649 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				583003552ACC16B400C9A649 /* syracuse_app */,
+				583003662ACC16B500C9A649 /* syracuse_appTests */,
+				583003702ACC16B500C9A649 /* syracuse_appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		583003542ACC16B400C9A649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583003612ACC16B500C9A649 /* Preview Assets.xcassets in Resources */,
+				5830035E2ACC16B500C9A649 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583003652ACC16B500C9A649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830036F2ACC16B500C9A649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		583003522ACC16B400C9A649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5830035C2ACC16B400C9A649 /* ContentView.swift in Sources */,
+				5830035A2ACC16B400C9A649 /* syracuse_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583003632ACC16B500C9A649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5830036C2ACC16B500C9A649 /* syracuse_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830036D2ACC16B500C9A649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				583003762ACC16B500C9A649 /* syracuse_appUITests.swift in Sources */,
+				583003782ACC16B500C9A649 /* syracuse_appUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		583003692ACC16B500C9A649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 583003552ACC16B400C9A649 /* syracuse_app */;
+			targetProxy = 583003682ACC16B500C9A649 /* PBXContainerItemProxy */;
+		};
+		583003732ACC16B500C9A649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 583003552ACC16B400C9A649 /* syracuse_app */;
+			targetProxy = 583003722ACC16B500C9A649 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		583003792ACC16B500C9A649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5830037A2ACC16B500C9A649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5830037C2ACC16B500C9A649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = syracuse_app/syracuse_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"syracuse_app/Preview Content\"";
+				DEVELOPMENT_TEAM = 7AY7CSLRG6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.fredfoc.syracuse-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5830037D2ACC16B500C9A649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = syracuse_app/syracuse_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"syracuse_app/Preview Content\"";
+				DEVELOPMENT_TEAM = 7AY7CSLRG6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.fredfoc.syracuse-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5830037F2ACC16B500C9A649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7AY7CSLRG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.fredfoc.syracuse-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/syracuse_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/syracuse_app";
+			};
+			name = Debug;
+		};
+		583003802ACC16B500C9A649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7AY7CSLRG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.fredfoc.syracuse-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/syracuse_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/syracuse_app";
+			};
+			name = Release;
+		};
+		583003822ACC16B500C9A649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7AY7CSLRG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.fredfoc.syracuse-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = syracuse_app;
+			};
+			name = Debug;
+		};
+		583003832ACC16B500C9A649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7AY7CSLRG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.fredfoc.syracuse-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = syracuse_app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		583003512ACC16B400C9A649 /* Build configuration list for PBXProject "syracuse_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583003792ACC16B500C9A649 /* Debug */,
+				5830037A2ACC16B500C9A649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5830037B2ACC16B500C9A649 /* Build configuration list for PBXNativeTarget "syracuse_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5830037C2ACC16B500C9A649 /* Debug */,
+				5830037D2ACC16B500C9A649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5830037E2ACC16B500C9A649 /* Build configuration list for PBXNativeTarget "syracuse_appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5830037F2ACC16B500C9A649 /* Debug */,
+				583003802ACC16B500C9A649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		583003812ACC16B500C9A649 /* Build configuration list for PBXNativeTarget "syracuse_appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583003822ACC16B500C9A649 /* Debug */,
+				583003832ACC16B500C9A649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5830034E2ACC16B400C9A649 /* Project object */;
+}
