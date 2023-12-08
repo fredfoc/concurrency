@@ -42,7 +42,6 @@ struct LoaderView: View {
     }
 }
 
-
 final class LoadingElement: Identifiable, ObservableObject {
     let id = UUID()
     @Published var progression: Float = 0
@@ -53,15 +52,15 @@ import StupidPackage
 @MainActor
 final class Loader: ObservableObject {
     @Published var elements = [LoadingElement]()
-    var logs = [UUID:String?]()
+    var logs = [UUID: String?]()
     @Published var logString = ""
     init() {
-        (0...10).forEach { _ in
+        (0 ... 10).forEach { _ in
             let element = LoadingElement()
             self.elements.append(element)
         }
     }
-    
+
     func load(_ speed: UInt32) {
         elements.forEach { element in
             self.logs[element.id] = "\(element.id.uuidString) in progress"
@@ -71,20 +70,26 @@ final class Loader: ObservableObject {
         }
         printLogs()
     }
-    
+
     func printLogs() {
         logString = logs.values
             .compactMap { $0 }
             .joined(separator: "-")
     }
-    
-    private func load(_ element: LoadingElement, _ speed: UInt32) async {
-        for index in 0...100 {
+
+    func updateLogs(_ id: UUID) {
+        logs[id] = nil
+    }
+
+    private nonisolated func load(_ element: LoadingElement, _ speed: UInt32) async {
+        for index in 0 ... 100 {
             StupidPackage.aStupidOperation(speed)
-            element.progression = Float(index)
-            if (index == 100){
-                logs[element.id] = nil
-                printLogs()
+            await MainActor.run {
+                element.progression = Float(index)
+            }
+            if index == 100 {
+                await updateLogs(element.id)
+                await printLogs()
             }
         }
     }

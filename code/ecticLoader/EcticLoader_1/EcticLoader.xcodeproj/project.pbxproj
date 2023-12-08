@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58429E3A2B23028100333598 /* StupidPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 58429E392B23028100333598 /* StupidPackage */; };
 		58C391DE2B20569C006F3725 /* EcticLoaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C391DD2B20569C006F3725 /* EcticLoaderApp.swift */; };
 		58C391E02B20569C006F3725 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C391DF2B20569C006F3725 /* ContentView.swift */; };
 		58C391E22B20569D006F3725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C391E12B20569D006F3725 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58429E372B23024B00333598 /* StupidPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = StupidPackage; sourceTree = "<group>"; };
 		58C391DA2B20569C006F3725 /* EcticLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcticLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C391DD2B20569C006F3725 /* EcticLoaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcticLoaderApp.swift; sourceTree = "<group>"; };
 		58C391DF2B20569C006F3725 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,17 +29,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58429E3A2B23028100333598 /* StupidPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58429E362B23024B00333598 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				58429E372B23024B00333598 /* StupidPackage */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		58429E382B23028100333598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58C391D12B20569C006F3725 = {
 			isa = PBXGroup;
 			children = (
+				58429E362B23024B00333598 /* Packages */,
 				58C391DC2B20569C006F3725 /* EcticLoader */,
 				58C391DB2B20569C006F3725 /* Products */,
+				58429E382B23028100333598 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +105,9 @@
 			dependencies = (
 			);
 			name = EcticLoader;
+			packageProductDependencies = (
+				58429E392B23028100333598 /* StupidPackage */,
+			);
 			productName = EcticLoader;
 			productReference = 58C391DA2B20569C006F3725 /* EcticLoader.app */;
 			productType = "com.apple.product-type.application";
@@ -336,6 +359,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58429E392B23028100333598 /* StupidPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StupidPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58C391D22B20569C006F3725 /* Project object */;
 }
