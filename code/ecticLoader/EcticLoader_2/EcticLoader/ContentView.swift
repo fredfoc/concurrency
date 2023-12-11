@@ -42,9 +42,14 @@ struct LoaderView: View {
     }
 }
 
+@MainActor
 final class LoadingElement: Identifiable, ObservableObject {
     let id = UUID()
     @Published var progression: Float = 0
+
+    func setProg(_ value: Float) {
+        progression = value
+    }
 }
 
 import StupidPackage
@@ -84,9 +89,7 @@ final class Loader: ObservableObject {
     private nonisolated func load(_ element: LoadingElement, _ speed: UInt32) async {
         for index in 0 ... 100 {
             StupidPackage.aStupidOperation(speed)
-            await MainActor.run {
-                element.progression = Float(index)
-            }
+            await element.setProg(Float(index))
             if index == 100 {
                 await updateLogs(element.id)
                 await printLogs()

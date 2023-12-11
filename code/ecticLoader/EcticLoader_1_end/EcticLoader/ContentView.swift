@@ -49,6 +49,7 @@ final class LoadingElement: Identifiable, ObservableObject {
 
 import StupidPackage
 
+@MainActor
 final class Loader: ObservableObject {
     @Published var elements = [LoadingElement]()
     var logs = [UUID: String?]()
@@ -63,7 +64,9 @@ final class Loader: ObservableObject {
     func load(_ speed: UInt32) {
         elements.forEach { element in
             self.logs[element.id] = "\(element.id.uuidString) in progress"
-            load(element, speed)
+            Task {
+                await load(element, speed)
+            }
         }
         printLogs()
     }
@@ -74,7 +77,7 @@ final class Loader: ObservableObject {
             .joined(separator: "-")
     }
 
-    private func load(_ element: LoadingElement, _ speed: UInt32) {
+    private func load(_ element: LoadingElement, _ speed: UInt32) async {
         for index in 0 ... 100 {
             StupidPackage.aStupidOperation(speed)
             element.progression = Float(index)
