@@ -66,7 +66,7 @@ On obtient évidemment une autre erreur :
 
 ![actor errors](images/actor_modif_2.jpeg)
 
-On comprends bien qu'on lance de l'asynchrone dans du synchrone.
+On comprend bien qu'on lance de l'asynchrone dans du synchrone.
 
 Pour le résoudre :
 
@@ -82,4 +82,35 @@ func load(_ speed: UInt32) {
 }
 ```
 
+La seconde erreur se corrige vite :
+
+```swift
+func printLogs() {
+    Task {
+        logString = await parallelLoader.logs.values
+            .compactMap { $0 }
+            .joined(separator: "-")
+    }
+}
+```
+
+Ouvrons Instruments pour examiner le développement.
+
+On constate le même découpage que dans notre app précédente, ce qui est rassurant :
+
+![actor instruments](images/actor_instrument_1.jpeg)
+
+Cependant, maintenant on peut voir l'apparition de notre nouvel `Actor`.
+
+![actor instruments](images/actor_instrument_1_detail.jpeg)
+
+Finalement, on eut aussi totalement déplacer le code de chargement vers l'`Actor` `ParallelLoader`. (voir le projet EcticLoader_3).
+
+Il n'y a pas d'intérêt réel à décrire ce processus, chacun peut y voir un exercice à faire tout seul.
+
+L'intérêt vient désormais de la gestion de l'annulation. En effet, pour le moment nous sommes intelligents et nous attendons la fin d'un chargement avant d'en lancer un nouveau. mais quid de l'appui sur les boutons de chargements pendant un chargement. Techniquement rien ne se passe et nous n'avons pas de crash, mais nous devons attendre la fin de chaque `Task` avant de pouvoir en lancer de nouvelles.
+
+On a même un problème avec des `Task` qui semblent ne pas se terminer...
+
+![actor instruments](images/actor_instrument_2.jpeg)
 
